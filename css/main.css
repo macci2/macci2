@@ -1,4 +1,127 @@
 
+/*#gnb {
+    height: 100%;
+    width: 400px;
+    background-color: white;
+    position: fixed;
+    left: -410px;
+    top: 0;
+    z-index: 3000;
+    transition: all 0.5s;
+
+}
+
+#gnb.on {
+    left: 0;
+}
+
+#gnb .gngdrawer {
+    height: 1080px;
+
+    display: block;
+    background-color: white;
+    top: 0;
+    width: 402px;
+    position: absolute;
+}
+
+#btn {
+    width: 124px;
+    height: 66px;
+    top: 104px;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    margin-bottom: 134px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+#gnb .btnon {
+    margin-top: 104px;
+    margin-left: 79px;
+    cursor: pointer;
+}
+
+#gnb .navcontain {
+    position: absolute;
+    top: 280px;
+    left: 79px;
+}
+
+#gnb .menu_back {
+    height:40px;
+    width: 100%;
+    position: absolute;
+    display: block;
+}
+
+#gnb .menu_back_01 {
+    position: absolute;
+    text-align: right;
+    margin-right: 0px;
+}
+
+#gnb .menu_back .menu_back_02 {
+    margin-top: 180px;
+    left: 0px;
+}
+#gnb .navtitle  {
+    height: 40px;
+}
+
+#gnb .navtitle .menuline {
+    width: 24px;
+    height: 2px;
+    background-color: #c0c0c0;
+    margin: 15px 0;
+}
+
+#gnb .promo {
+    margin-top: 630px;
+    width: 176px;
+    height: 70px;
+    background-color: aqua;
+    z-index: 44444;
+    margin-left: 80px;
+}
+
+#gnb .Promo-controls {
+    margin-top: 40px;
+    width: 50px;
+    height: 20px;
+    margin-left: 215px;
+    position: absolute;
+    z-index: 2222;
+
+}
+
+#gnb .Promo-controls .promo_arrow_r {
+    width: 13px;
+    display: inline-block;
+
+}
+
+#gnb .Promo-controls .promo-circle {
+    width: 13px;
+    display: inline-block;
+    text-align: center;
+}
+
+#gnb .Promo-controls .promo_arrow_l {
+    width: 13px;
+    display: inline-block;
+}
+
+#gnb .promocontent {
+
+    width: 240px;
+    height: 100px;
+
+    position: absolute;
+    background-color: tomato;
+}*/
+
 #gnb {
     height: 100%;
     width: 400px;
@@ -117,6 +240,7 @@
     background-color: tomato;
 }
 
+
 .share {
     width: 48px;
     height: 238px;
@@ -229,7 +353,7 @@ map {
 #section02 .bg {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.35);
     position: absolute;
     left: 0;
     top: 0;
@@ -255,6 +379,11 @@ map {
 #section02 .MainTitle .Title {
     width: 522px;
     height: 314px;
+    overflow: hidden;
+}
+#section02 .MainTitle .TitleSub {
+    width: 522px;
+    height: 92px;
     overflow: hidden;
 }
 
@@ -305,7 +434,45 @@ map {
     left: 50%;
     margin-left: -79px;
     cursor: pointer;
+    z-index: 100;
+}
 
+#section02 .MainTitle .MainBtn_back {
+    bottom: -84px;
+    animation: back linear alternate infinite 1s;
+}
+
+@keyframes back {
+    0%{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);}
+    100%{
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);}
+}
+
+
+
+
+
+
+
+#section02 .MainTitle .TitleSub.on {
+    animation: title linear normal infinite 8s 1s;
+}
+#section02 .MainTitle .TitleSub img {
+    position: relative;
+    transition: all 1.5s;
+    top: 92px;
+}
+#section02 .MainTitle .TitleSub.on img {
+    top: 0;
 }
 
 #section02 .share {
@@ -338,19 +505,42 @@ map {
     background-size: cover;
 }
 
+
+
+
+#section03 .bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    text-align:center;
+    line-height: 980px;
+}
+
+
+
 #section03 .ListTitle {
     position: absolute;
     top: 150px;
     left: 50%;
     margin-left: -333px;
 }
-
+#section03 .Listpollen{
+    position: absolute;
+    left: -200px;
+    bottom:-100px;
+}
 #section03 .ListDog {
     position: absolute;
     width: 18%;
     right: 0px;
     bottom: 0px;
-    z-index: 333333;
+    z-index: 3333;
 }
 
 #section03 .ListDog img {
@@ -389,11 +579,11 @@ map {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 #section03 .list_character > div:hover .mark {
-    animation: mark linear normal infinite 1.5s;
+    animation: mark linear normal infinite 1s;
 }
 
 @keyframes mark {
@@ -405,11 +595,11 @@ map {
         transform: rotate(0deg);
     }
     25% {
-        -webkit-transform: rotate(10deg);
-        -moz-transform: rotate(10deg);
-        -ms-transform: rotate(10deg);
-        -o-transform: rotate(10deg);
-        transform: rotate(10deg);
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(7deg);
+        -ms-transform: rotate(-6deg);
+        -o-transform: rotate(5deg);
+        transform: rotate(-9deg);
     }
     50% {
         -webkit-transform: rotate(0deg);
@@ -419,11 +609,11 @@ map {
         transform: rotate(0deg);
     }
     75% {
-        -webkit-transform: rotate(-10deg);
-        -moz-transform: rotate(-10deg);
-        -ms-transform: rotate(-10deg);
-        -o-transform: rotate(-10deg);
-        transform: rotate(-10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(-7deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(-7deg);
+        transform: rotate(5deg);
     }
     100% {
         -webkit-transform: rotate(0deg);
@@ -484,6 +674,34 @@ map {
     bottom: 100px;
 }
 
+.main_breandbox_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+}
+
+.main_breandbox_layer .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 99997;
+    opacity: .8;
+}
+.main_breandbox_layer .wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    z-index: 99998;
+    text-align: center;
+}
+
 #section04 {
     background: url("../img/03_back_ground.jpg") no-repeat center bottom;
     background-size: cover;
@@ -495,20 +713,15 @@ map {
     position: absolute;
     left: 0;
     top: 0;
-
+    /*z-index: -1;*/
 }
-
-
-
-
-
-
 
 #section04 .video_player {
     position: absolute;
     bottom: 170px;
     left: 190px;
     width: 50%;
+    z-index: 999;
 }
 
 #section04 .video_player_progress {
@@ -539,7 +752,6 @@ map {
     top: 0;
     z-index: 3000;
     transition: all 0.5s;
-
 }
 
 #section04 .video_list.on {
@@ -568,7 +780,7 @@ map {
 #section04 .video_list_pop {
     position: absolute;
     right: 0;
-
+    z-index: 9999;
 }
 
 .video_list .in_arw {
@@ -592,7 +804,8 @@ map {
 }
 
 .video_listup {
-    height: 25%;
+    position: relative;
+    height: 20%;
 }
 
 /* Section 05 */
@@ -686,6 +899,22 @@ map {
     margin-top: -20%;
 
 }
+
+
+.sc_02_pop .main .search {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.sc_02_pop .main .search input {
+    width:;
+    height:;
+}
+
+
+
 .sc_02_pop .main_pollen {
     width: 900px;
     height: 900px;
@@ -749,10 +978,7 @@ map {
 }
 
 
-
-
-
-.sc_03_pop1 .main {
+.sc_03_pop1 .main, .sc_03_pop2 .main, .sc_03_pop2 .main, .sc_03_pop2 .main {
     margin-left:;
     margin-top:;
 }
@@ -762,26 +988,128 @@ map {
     margin-top:;
 }
 
+.sc_03_pop1 .main .chat_box, .sc_03_pop2 .main .chat_box, .sc_03_pop3 .main .chat_box, .sc_03_pop4 .main .chat_box {
+    margin-top: -389px;
+    margin-left: -365px;
+    width: 760px;
+    height: 730px;
+    background: url("../img/talk_back.png") center center no-repeat;
+    background-size: cover;
+}
+
+.chat_title {
+    position: relative;
+    width: 440px;
+    top:30px;
+    left: 40px;
+}
+
+.chat_content {
+    position: relative;
+    top: 60px;
+    left: 35px;
+    width: 690px;
+    height: 470px;
+    overflow: hidden;
+}
+
+.chat_content ul {
+    position: relative;
+    padding-top: 10px;
+}
+
+.chat_content ul li {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.chat_content ul li.on {
+    opacity: 1;
+}
+
+.chat_content ul li img{
+    margin-top: 6px;
+    width: 100%;
+}
+
+.chat_txt {
+    position:absolute;
+    width:656px;
+    height:65px;
+    bottom:70px;
+    margin-left: 60px;
+}
+
+.chat_txt > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.chat_txt > div.on {
+    opacity: 1;
+    z-index: 1;
+}
 
 
 
 
 
 
+.big_img {
+    padding: 50px 70px 0;
+}
+
+.big_img img {
+    width: 100%;
+}
+
+.video_small {
+    padding: 30px 70px;
+}
+
+.video_small img {
+    width: 85%;
+}
+
+.btn_play {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    width: 29px;
+    height: 29px;
+}
 
 
 
+/*chat*/
 
+.sc_03_pop1 .chat_content ul li:nth-child(2).on{transition-delay:1s;}
+.sc_03_pop1 .chat_content ul li:nth-child(3).on{transition-delay:2s;}
+.sc_03_pop1 .chat_content ul li:nth-child(4).on{transition-delay:3s;}
 
+.sc_03_pop1 .chat_txt > div:nth-child(1).on {transition-delay: 1s;}
+.sc_03_pop1 .chat_txt > div:nth-child(2).on {transition-delay: 4s;}
 
+/*chat*/
+.sc_03_pop2 .chat_content ul li:nth-child(3).on{transition-delay:1s;}
+.sc_03_pop2 .chat_content ul li:nth-child(5).on{transition-delay:1s;}
 
+.sc_03_pop2 .chat_txt > div:nth-child(1).on {transition-delay: 1s;}
+.sc_03_pop2 .chat_txt > div:nth-child(2).on {transition-delay: 2s;}
+.sc_03_pop2 .chat_txt > div:nth-child(3).on {transition-delay: 2s;}
 
+/*chat*/
 
+.sc_03_pop4 .chat_content ul li:nth-child(2).on{transition-delay:1s;}
+.sc_03_pop4 .chat_content ul li:nth-child(3).on{transition-delay:2s;}
+.sc_03_pop4 .chat_content ul li:nth-child(4).on{transition-delay:3s;}
 
-
-
-
-
+.sc_03_pop4 .chat_txt > div:nth-child(1).on {transition-delay: 1s;}
+.sc_03_pop4 .chat_txt > div:nth-child(2).on {transition-delay: 4s;}
 
 
 
