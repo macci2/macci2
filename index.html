@@ -20,6 +20,54 @@
 <body>
 
 <!--============================gnb영역==============================-->
+<!--
+<div id="btn"><img src="img/common_menu.png" alt=""></div>
+<div id="gnb">
+    <div class="gngdrawer">
+        <div class="Menu-content">
+            <div class="btnon">
+                <img src="img/menu_on.png" alt="">
+            </div>
+            <div class="menu_back">
+                <div class="menu_back_01"><img src="img/menu_title.png" alt=""></div>
+                <div class="menu_back_02"><img src="img/menu_back_02.png" alt=""></div>
+            </div>
+            <div class="navcontain">
+
+                <div class="navtitle">
+                    <div class="menutitle"><img src="img/menu_back_02.png" alt=""></div>
+                    <div class="menuline"></div>
+                </div>
+                <div>
+                    <ul class="navlist">
+                        <li class="NavBtn"><a href="#Page01"><img src="img/nav_01.png" alt=""></a></li>
+                        <li class="NavBtn"><a href="#Page02"><img src="img/nav_02.png" alt=""></a></li>
+                        <li class="NavBtn"><a href="#Page03"><img src="img/nav_03.png" alt=""></a></li>
+                        <li class="NavBtn"><a href="#Page04"><img src="img/nav_04.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="promo">
+                <ul class="Promo-controls">
+                    <li class="promo_arrow_r"><img src="img/arow_r.png" alt=""></li>
+                    <li class="promo-circle"><img src=" img/arow_center.png" alt=""></li>
+                    <li class="promo_arrow_l"><img src="img/arrow_l.png" alt=""></li>
+
+
+                </ul>
+                <ul class="promocontent">
+                    <li class="promo_info"><img src="img/banner.png" alt=""></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>--!>
+
+<!--============================gnb영역==============================-->
+
 <div id="btn"><img src="img/common_menu.png" alt=""></div>
 <div id="gnb">
     <div class="gngdrawer">
@@ -64,10 +112,7 @@
         </div>
     </div>
 </div>
-
 <!--============================gnb영역==============================-->
-
-
 <div id="fullpage">
     <div class="section" id="section01">
         <div class="content_01">
@@ -75,9 +120,9 @@
             <div class="HomeScroll"><img src="img/int_drag.png" alt=""></div>
         </div>
         <div class="content_02">
-            <div class="Garender_01"><img src="img/int_garender_01.png" alt="" class="layer" data-depth="-0.3"></div>
+            <div class="Garender_01"><img src="img/int_garender_01.png" alt="" class="layer" data-depth="0.2"></div>
             <div class="Garender_02"><img src="img/int_garender_02.png" alt="" class="layer" data-depth="0.1"></div>
-            <div class="Garender_03"><img src="img/int_garender_03.png" alt="" class="layer" data-depth="-0.25"></div>
+            <div class="Garender_03"><img src="img/int_garender_03.png" alt="" class="layer" data-depth="-0.3"></div>
         </div>
 
     </div>
@@ -94,17 +139,22 @@
         <div class="MainTitle">
             <div class="Title"><img src="img/main_title.png" alt=""></div>
             <div class="TitleSub"><img src="img/main_title_s.png" alt=""></div>
-            <div class="MainBtn"><img src="img/main_btn.png" alt=""></div>
+            <div class="MainBtn"><img src="img/main_btn01.png" alt=""></div>
+            <div class="MainBtn_back"><img src="img/main_btn_02.png" alt=""></div>
         </div>
     </div>
 
 
     <div class="section" id="section03">
+        <div class="bg"><img src="img/dim_contest01.png" alt=""></div>
         <div class="ListTitle">
             <img src="img/list_title.png" alt="">
         </div>
         <div class="ListDog">
             <img src="img/list_dog.png" alt="">
+        </div>
+        <div class="Listpollen">
+            <img src="img/pollen.png" alt="">
         </div>
         <div class="list_character">
             <div class="character1"><img src="img/list_back_01.png" alt=""><img src="img/name_01.png" class="mark"
@@ -119,20 +169,25 @@
     </div>
 
     <div class="section" id="section04">
-
-        <div id="video_slides">
+        <div id="main_breandbox_layer2" class="lypop main_breandbox_layer" style="display: none;">
+                <div class="bg"></div>
+                <div id="main_layer_banner2" class="wrap" data-bigwidth="" style="margin-top: -116px; margin-left: -400px;">
+                    <img src="img/dim_trailer02.png" alt="popup_overlay" width="50%">                    
+                </div>
+        </div>
+        <div id="video_slides" >
             <div>
-                <video width="1920" height="1080" autoplay="autoplay" loop="loop">
+                <video width="80%" height="80%" data-autoplay loop muted>
+                    <source src="music/coco_trailer.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <video width="100%" height="100%" loop>
                     <source src="img/main/video.mp4" type="video/mp4">
                 </video>
             </div>
             <div>
-                <video width="1920" height="1080" autoplay="autoplay" loop="loop">
-                    <source src="img/main/video.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div>
-                <video width="1920" height="1080" autoplay="autoplay" loop="loop">
+                <video width="100%" height="100%" loop>
                     <source src="img/main/video.mp4" type="video/mp4">
                 </video>
             </div>
@@ -160,33 +215,54 @@
             <div class="video_arw"></div>
             <div class="video_popup_right">
                 <div class="video_big">
-                    <div class="big_img"></div>
+                    <div class="big_img">
+                        <img src="img/more_00.png" alt="">
+                    </div>
                 </div>
                 <div class="video_small">
-                    <div class="video_listup"></div>
-                    <div class="video_listup"></div>
-                    <div class="video_listup"></div>
-                    <div class="video_listup"></div>
+                    <div class="video_listup">
+                        <img src="img/more_01.png" alt="">
+                        <div class="btn btn_play">
+                            <img src="img/more_btn.png" alt="">
+                        </div>
+                    </div>
+                    <div class="video_listup">
+                        <img src="img/more_02.png" alt="">
+                        <div class="btn btn_play">
+                            <img src="img/more_btn.png" alt="">
+                        </div>
+                    </div>
+                    <div class="video_listup">
+                        <img src="img/more_03.png" alt="">
+                        <div class="btn btn_play">
+                            <img src="img/more_btn.png" alt="">
+                        </div>
+                    </div>
+                    <div class="video_listup">
+                        <img src="img/more_04.png" alt="">
+                        <div class="btn btn_play">
+                            <img src="img/more_btn.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="section" id="section05">
+        <div id="main_breandbox_layer3" class="lypop main_breandbox_layer" style="display: none;">
+            <div class="bg"></div>
+            <div id="main_layer_banner3" class="wrap" data-bigwidth="" style="margin-top: -116px; margin-left: -400px;">
+                <img src="img/dim_music03.png" alt="popup_overlay" width="50%">                    
+            </div>
+        </div>
         <div class="section05_title">
             <img src="img/music_title.png" alt="뮤직타이틀">
         </div>
         <div class="right_contents">
             <div class="right_container">
                 <div class="section05_content">
-
-                    <div><img src="" alt=""></div>
-                    <!--<div><img src="" alt=""></div>-->
-                    
-                    <img src="img/music_01.png" alt="music_01" usemap="#planetmap">
-                    <map name="planetmap">
-                        <area shape="circle" coords="175,210,18" href="" alt="music_01"> <!-- href 안에다가 링크 주소 -->
-                    </map>
+                    <img src="img/music_01.png" alt="music_01">
                 </div>
                 <div class="section05_content">
                     <img src="img/music_02.png" alt="music_02">
@@ -198,6 +274,9 @@
                     <img src="img/music_04.png" alt="music_04">
                 </div>
             </div>
+        </div>
+        <div class="content_btn">
+            <img src="img/music_sliding.png" alt="">
         </div>
     </div>
 
@@ -218,6 +297,8 @@
     <div class="bg"></div>
     <div class="main">
         <img src="img/main_over.png" alt="">
+
+        <div class="search"><input type="text" placeholder="검색"> <img src="img/maun_over_input.png" alt=""></div>
     </div>
     <div class="main_pollen">
         <div class="pollen_01"> <img src="img/pollen_01.png" alt=""></div>
@@ -239,7 +320,41 @@
 <div class="pop sc_03_pop1">
     <div class="bg"></div>
     <div class="main">
-        <div></div>
+        <div class="chat_box">
+            <div class="chat_title">
+                <img src="img/talk_name_01.png" alt="chat_title">
+            </div>
+            <div class="chat_del">
+                <img src="" alt="">
+            </div>
+            <div class="chat_content">
+                <ul>
+                    <li>
+                        <img src="img/talk_01_01.png" alt="talk_01_01">
+                    </li>
+                    <li>
+                        <img src="img/talk_01_02.png" alt="talk_01_02">
+                    </li>
+                    <li>
+                        <img src="img/talk_01_03.png" alt="talk_01_03">
+                    </li>
+                    <li>
+                        <img src="img/talk_01_04.png" alt="talk_01_04">
+                    </li>
+                    <li>
+                        <img src="img/talk_01_05.png" alt="talk_01_05">
+                    </li>
+                    <li>
+                        <img src="img/talk_01_06.png" alt="talk_01_06">
+                    </li>
+                </ul>
+            </div>
+            <div class="chat_txt">
+                <div><img src="img/answer_01_01.png" alt="talk_txt"></div>
+                <div><img src="img/answer_01_02.png" alt="talk_txt"></div>
+                <div><img src="img/answer_01_03.png" alt="talk_txt"></div>
+            </div>
+        </div>
     </div>
     <div class="close"></div>
 </div>
@@ -247,11 +362,111 @@
 <div class="pop sc_03_pop2">
     <div class="bg"></div>
     <div class="main">
-
+        <div class="chat_box">
+            <div class="chat_title">
+                <img src="img/talk_name_02.png" alt="chat_title">
+            </div>
+            <div class="chat_content">
+                <ul>
+                    <li>
+                        <img src="img/talk_02_01.png" alt="talk_01_01">
+                    </li>
+                    <li>
+                        <img src="img/talk_02_02.png" alt="talk_01_02">
+                    </li>
+                    <li>
+                        <img src="img/talk_02_03.png" alt="talk_01_03">
+                    </li>
+                    <li>
+                        <img src="img/talk_02_04.png" alt="talk_01_04">
+                    </li>
+                    <li>
+                        <img src="img/talk_02_05.png" alt="talk_01_05">
+                    </li>
+                </ul>
+            </div>
+            <div class="chat_txt">
+                <div><img src="img/answer_02_01.png" alt="talk_txt"></div>
+                <div><img src="img/answer_02_02.png" alt="talk_txt"></div>
+                <div><img src="img/answer_02_03.png" alt="talk_txt"></div>
+            </div>
+        </div>
     </div>
     <div class="close"></div>
 </div>
 
+<div class="pop sc_03_pop3">
+    <div class="bg"></div>
+    <div class="main">
+        <div class="chat_box">
+            <div class="chat_title">
+                <img src="img/talk_name_03.png" alt="chat_title">
+            </div>
+            
+            <div class="chat_content">
+                <ul>
+                    <li>
+                        <img src="img/talk_03_01.png" alt="talk_01_01">
+                    </li>
+                    <li>
+                        <img src="img/talk_03_02.png" alt="talk_01_02">
+                    </li>
+                    <li>
+                        <img src="img/talk_03_03.png" alt="talk_01_03">
+                    </li>
+                    <li>
+                        <img src="img/talk_03_04.png" alt="talk_01_04">
+                    </li>
+                    <li>
+                        <img src="img/talk_03_05.png" alt="talk_01_04">
+                    </li>
+                </ul>
+            </div>
+            <div class="chat_txt">
+                <div><img src="img/answer_03_01.png" alt="talk_txt"></div>
+                <div><img src="img/answer_03_02.png" alt="talk_txt"></div>
+                <div><img src="img/answer_03_03.png" alt="talk_txt"></div>
+            </div>
+        </div>
+    </div>
+    <div class="close"></div>
+</div>
+
+<div class="pop sc_03_pop4">
+    <div class="bg"></div>
+    <div class="main">
+        <div class="chat_box">
+            <div class="chat_title">
+                <img src="img/talk_name_04.png" alt="chat_title">
+            </div>
+            <div class="chat_content">
+                <ul>
+                    <li>
+                        <img src="img/talk_04_01.png" alt="talk_01_01">
+                    </li>
+                    <li>
+                        <img src="img/talk_04_02.png" alt="talk_01_02">
+                    </li>
+                    <li>
+                        <img src="img/talk_04_03.png" alt="talk_01_03">
+                    </li>
+                    <li>
+                        <img src="img/talk_04_04.png" alt="talk_01_04">
+                    </li>
+                    <li>
+                        <img src="img/talk_04_05.png" alt="talk_01_05">
+                    </li>
+                </ul>
+            </div>
+            <div class="chat_txt">
+                <div><img src="img/answer_04_01.png" alt="talk_txt"></div>
+                <div><img src="img/answer_04_02.png" alt="talk_txt"></div>
+                <div><img src="img/answer_04_03.png" alt="talk_txt"></div>
+            </div>
+        </div>
+    </div>
+    <div class="close"></div>
+</div>
 
 </body>
 </html>
