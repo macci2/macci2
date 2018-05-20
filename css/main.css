@@ -1,0 +1,798 @@
+
+#gnb {
+    height: 100%;
+    width: 400px;
+    background-color: white;
+    position: fixed;
+    left: -410px;
+    top: 0;
+    z-index: 3000;
+    transition: all 0.5s;
+
+}
+
+#gnb.on {
+    left: 0;
+}
+
+#gnb .gngdrawer {
+    height: 1080px;
+
+    display: block;
+    background-color: white;
+    top: 0;
+    width: 402px;
+    position: absolute;
+}
+
+#btn {
+    width: 124px;
+    height: 66px;
+    top: 104px;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    margin-bottom: 134px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+#gnb .btnon {
+    margin-top: 104px;
+    margin-left: 79px;
+    cursor: pointer;
+}
+
+#gnb .navcontain {
+    position: absolute;
+    top: 280px;
+    left: 79px;
+}
+
+#gnb .menu_back {
+    width: 100%;
+    position: absolute;
+    display: block;
+}
+
+#gnb .menu_back_01 {
+    text-align: right;
+    margin-right: 0px;
+}
+
+#gnb .menu_back .menu_back_02 {
+    margin-top: 180px;
+    left: 0px;
+}
+
+#gnb .navtitle .menuline {
+    width: 24px;
+    height: 2px;
+    background-color: #e5e5e5;
+    margin: 15px 0;
+}
+
+#gnb .promo {
+    margin-top: 630px;
+    width: 176px;
+    height: 70px;
+    background-color: aqua;
+    z-index: 44444;
+    margin-left: 80px;
+}
+
+#gnb .Promo-controls {
+    margin-top: 40px;
+    width: 50px;
+    height: 20px;
+    margin-left: 215px;
+    position: absolute;
+    z-index: 2222;
+
+}
+
+#gnb .Promo-controls .promo_arrow_r {
+    width: 13px;
+    display: inline-block;
+
+}
+
+#gnb .Promo-controls .promo-circle {
+    width: 13px;
+    display: inline-block;
+    text-align: center;
+}
+
+#gnb .Promo-controls .promo_arrow_l {
+    width: 13px;
+    display: inline-block;
+}
+
+#gnb .promocontent {
+
+    width: 240px;
+    height: 100px;
+
+    position: absolute;
+    background-color: tomato;
+}
+
+.share {
+    width: 48px;
+    height: 238px;
+    bottom: 84px;
+    margin-right: 64px;
+    right: 0;
+    text-align: center;
+    position: absolute;
+
+}
+
+.ShareIcon {
+    height: 16px;
+    margin-bottom: 10px;
+}
+
+.ShareIcon_t {
+    margin-top: 28px;
+
+}
+
+.ShareOn {
+    margin-top: 28px;
+}
+
+map {
+    display: inline;
+}
+
+#fullpage > div {
+    height: 980px;
+}
+
+#section01 {
+    background: url("../img/int_back.jpg") no-repeat center top;
+    /*background-size: cover;*/
+}
+
+/* Section01 img */
+.Garender_01, .Garender_02, .Garender_03 {
+    position: absolute;
+}
+
+.Garender_01 {
+    top: 50px;
+    left: -50px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.Garender_02 {
+    top: 250px;
+    left: 0px;
+    width: 100%;
+}
+
+.Garender_03 {
+    top: -20px;
+    left: 0px;
+    width: 100%;
+}
+
+.Garender_01, .Garender_02, .Garender_03 {
+    width: 100%;
+}
+
+#section01 .content_01 {
+    width: 209px;
+    height: 228px;
+    position: absolute;
+    left: 50%;
+    margin-left: -105px;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 88px;
+}
+
+.HomeScroll {
+    margin-top: 20px;
+}
+
+#section01 .garender_01 {
+    position: absolute;
+}
+
+#section01 .garender_02 {
+    position: absolute;
+}
+
+#section01 .garender_03 {
+    position: absolute;
+}
+
+#section02 {
+    /*background-size: cover;*/
+}
+
+#section02 .video_wrap {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+}
+
+#section02 .bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+#section02 .MainTitle {
+    width: 526px;
+    height: 654px;
+    position: absolute;
+    left: 50%;
+    top: 195px;
+    margin-left: -263px;
+    text-align: center;
+}
+
+#section02 .MainTitle > div {
+    position: relative
+}
+
+#section02 .MainTitle .Title {
+    width: 522px;
+    height: 314px;
+    overflow: hidden;
+}
+
+@keyframes title {
+    0% {
+        left: 0;
+        top: 0
+    }
+    25% {
+        left: 10px;
+        top: 5px
+    }
+    40% {
+        left: 0;
+        top: 15px
+    }
+    60% {
+        left: 0;
+        top: 0
+    }
+    80% {
+        left: -10px;
+        top: -5px
+    }
+    100% {
+        left: 0;
+        top: 0
+    }
+}
+
+#section02 .MainTitle .Title.on {
+    animation: title linear normal infinite 8s 1s;
+}
+
+#section02 .MainTitle .Title img {
+    position: relative;
+    transition: all 1s;
+    top: 314px;
+}
+
+#section02 .MainTitle .Title.on img {
+    top: 0;
+}
+
+#section02 .MainTitle .MainBtn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -79px;
+    cursor: pointer;
+
+}
+
+#section02 .share {
+    width: 48px;
+    height: 238px;
+    bottom: 84px;
+    margin-right: 64px;
+    right: 0;
+    text-align: center;
+    position: absolute;
+
+}
+
+#section02 .ShareIcon {
+    height: 16px;
+    margin-bottom: 10px;
+}
+
+#section02 .ShareIcon_t {
+    margin-top: 28px;
+
+}
+
+#section02 .ShareOn {
+    margin-top: 28px;
+}
+
+#section03 {
+    background: url("../img/list_background.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#section03 .ListTitle {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -333px;
+}
+
+#section03 .ListDog {
+    position: absolute;
+    width: 18%;
+    right: 0px;
+    bottom: 0px;
+    z-index: 333333;
+}
+
+#section03 .ListDog img {
+    width: 100%;
+}
+
+#section03 .list_character {
+
+    width: 75%;
+    height: 50%;
+    position: absolute;
+    /*left: 50%;*/
+    margin-left: -35%;
+    /*margin: 0 auto;*/
+    left: 50%;
+    bottom: 120px;
+    /*top:280px;*/
+}
+
+#section03 .list_character > div {
+    float: left;
+    width: 22%;
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#section03 .list_character > div .mark {
+    -webkit-transform-origin: center top;
+    -moz-transform-origin: center top;
+    -ms-transform-origin: center top;
+    -o-transform-origin: center top;
+    transform-origin: center top;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+
+#section03 .list_character > div:hover .mark {
+    animation: mark linear normal infinite 1.5s;
+}
+
+@keyframes mark {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+#section03 .list_character > div:first-child {
+    margin-right: 12px;
+}
+
+#section03 .character1 img {
+    width: 100%;
+    margin-top: -25px;
+}
+
+#section03 .character1 .mark {
+    width: 65%;
+    left: 18%;
+    position: relative;
+    bottom: 120px;
+}
+
+#section03 .character2 img {
+    width: 100%;
+}
+
+#section03 .character2 .mark {
+    width: 65%;
+    left: 18%;
+    position: relative;
+    bottom: 150px;
+}
+
+#section03 .character3 img {
+    width: 100%;
+    margin-top: -25px;
+}
+
+#section03 .character3 .mark {
+    width: 65%;
+    left: 18%;
+    position: relative;
+    bottom: 130px;
+}
+
+#section03 .character4 img {
+    width: 100%;
+}
+
+#section03 .character4 .mark {
+    width: 70%;
+    left: 15%;
+    position: relative;
+    bottom: 100px;
+}
+
+#section04 {
+    background: url("../img/03_back_ground.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+#video_slides {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+
+
+
+
+
+#section04 .video_player {
+    position: absolute;
+    bottom: 170px;
+    left: 190px;
+    width: 50%;
+}
+
+#section04 .video_player_progress {
+    height: 100px;
+    cursor: pointer;
+}
+
+#myProgress {
+    width: 70%;
+    background-color: #e5c8b4;
+    position: absolute;
+    bottom: 0;
+}
+
+#myBar {
+    width: 590px;
+    height: 8px;
+    background-color: #eb9535;
+
+}
+
+#section04 .video_list {
+    height: 100%;
+    width: 540px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    right: -620px;
+    top: 0;
+    z-index: 3000;
+    transition: all 0.5s;
+
+}
+
+#section04 .video_list.on {
+    right: 0;
+}
+
+#section04 .video_arw {
+    position: absolute;
+    top: 50%;
+    left: 800px;
+}
+
+.video_player p {
+
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.play_btn_on {
+    position: absolute;
+    width: 60px;
+    bottom: 32px;
+}
+
+#section04 .video_list_pop {
+    position: absolute;
+    right: 0;
+
+}
+
+.video_list .in_arw {
+    position: absolute;
+    top: 49%;
+    margin-left: -70px;
+}
+
+.video_popup_right {
+    width: 100%;
+    height: 100%;
+
+}
+
+.video_big {
+    height: 50%;
+}
+
+.video_small {
+    height: 50%;
+}
+
+.video_listup {
+    height: 25%;
+}
+
+/* Section 05 */
+#section05 {
+    background: url("../img/music_background.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+#section05 .section05_title {
+    width: 25%;
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 250px;
+}
+
+#section05 .right_container {
+    width: 80%;
+    float: left;
+}
+
+#section05 .section05_title img {
+    width: 100%;
+}
+
+#section05 .right_contents {
+    width: 50%;
+    float: right;
+}
+
+#section05 .right_contents .section05_content {
+    width: 35%;
+    height: 100%;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+#section05 .right_contents .section05_content img {
+    width: 100%;
+}
+
+#section05 .right_contents:after {
+    float: none;
+}
+
+/*pop common*/
+
+.pop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999999;
+    display: none;
+}
+
+.pop > div {
+    position: absolute;
+}
+
+.pop .bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    left: 0;
+    top: 0;
+}
+
+.pop .main {
+    left: 50%;
+    top: 50%;
+
+}
+
+.pop .close {
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+}
+
+/*======================================*/
+
+.sc_02_pop .main {
+    width: 80%;
+    height: 80%;
+    margin-left: -25%;
+    margin-top: -20%;
+
+}
+.sc_02_pop .main_pollen {
+    width: 900px;
+    height: 900px;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.sc_02_pop .main_pollen .pollen_01{
+    position: absolute;
+    top:0px;
+    left: 480px;
+}
+.sc_02_pop .main_pollen .pollen_02{
+    position: absolute;
+    top:26px;
+    left: 410px;
+}
+.sc_02_pop .main_pollen .pollen_03{
+    position: absolute;
+    top:120px;
+    left: 300px;
+}
+.sc_02_pop .main_pollen .pollen_04{
+    position: absolute;
+    top:100px;
+    left: 270px;
+}
+.sc_02_pop .main_pollen .pollen_05{
+    position: absolute;
+    top:700px;
+    left: 500px;
+}
+.sc_02_pop .main_pollen .pollen_06{
+    position: absolute;
+    top:420px;
+    left: 0px;
+}
+.sc_02_pop .main_pollen .pollen_07{
+    position: absolute;
+    top:300px;
+    left: 800px;
+}
+.sc_02_pop .main_pollen .pollen_08{
+    position: absolute;
+    top:800px;
+    left: 700px;
+}
+.sc_02_pop .main_pollen .pollen_09{
+    position: absolute;
+    top:400px;
+    left: 730px;
+}
+.sc_02_pop .main_pollen .pollen_10{
+    position: absolute;
+    top:650px;
+    left: 330px;
+}
+.sc_02_pop .main_pollen .pollen_11{
+    position: absolute;
+    top:150px;
+    left: 730px;
+}
+
+
+
+
+
+.sc_03_pop1 .main {
+    margin-left:;
+    margin-top:;
+}
+
+.sc_03_pop1 .close {
+    margin-left:;
+    margin-top:;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
