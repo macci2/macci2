@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <title>test</title>
+    <title>CoCo :: 코코</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fullPage.css">
     <script src="js/jquery-1.8.1.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/prefixfree.min.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/jquery.slides.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.vide.js"></script>
 </head>
 <body>
 
@@ -82,7 +83,7 @@
             <div class="navcontain">
 
                 <div class="navtitle">
-                    <div class="menutitle">Menu</div>
+                    <div class="menutitle"><img src="img/" alt=""></div>
                     <hr class="menuline">
                 </div>
                 <div>
@@ -105,8 +106,8 @@
                 </ul>
                 <ul class="promocontent">
                     <li class="promo_info"><img src="img/banner.png" alt=""></li>
-                    <li></li>
-                    <li></li>
+                    <li class="promo_info"><img src="img/banner.png" alt=""></li>
+                    <li class="promo_info"><img src="img/banner.png" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -128,13 +129,9 @@
     </div>
 
 
-    <div class="section" id="section02">
-
-        <div class="video_wrap">
-            <video width="1920" height="1080" data-autoplay loop muted>
-                <source src="img/coco_background.mp4" type="video/mp4">
-            </video>
-        </div>
+    <div class="section" id="section02" style="width: 100%; height: 100%;"
+  data-vide-bg="mp4: img/coco_background"
+  data-vide-options="position: 0% 50%, loop: false, muted: false">
         <div class="bg"></div>
         <div class="MainTitle">
             <div class="Title"><img src="img/main_title.png" alt=""></div>
@@ -167,23 +164,29 @@
                                                                                 alt="name_04"></div>
         </div>
     </div>
-
-    <div class="section" id="section04">
-        <div id="main_breandbox_layer2" class="lypop main_breandbox_layer" style="display: none;">
+<!-- <div id="block2" style="width: 100%; height: 500px;"
+  data-vide-bg="mp4: video/ocean, webm: video/ocean, ogv: http://vodkabears.github.io/vide/video/ocean, poster: video/ocean"
+  data-vide-options="position: 0% 50%">
+</div> -->
+    <div class="section" id="section04" style="width: 100%; height: 100%;"
+  data-vide-bg="mp4: music/coco_trailer"
+  data-vide-options="position: 0% 50%, loop: false, muted: false">
+        <div class="bg"><img src="img/dim_trailer02.png" alt=""></div>
+<!--         <div id="main_breandbox_layer2" class="lypop main_breandbox_layer" style="display: none;">
                 <div class="bg"></div>
                 <div id="main_layer_banner2" class="wrap" data-bigwidth="" style="margin-top: -116px; margin-left: -400px;">
                     <img src="img/dim_trailer02.png" alt="popup_overlay" width="50%">                    
                 </div>
-        </div>
-        <div id="video_slides" >
+        </div> -->
+        <!-- <div id="video_slides" >
             <div>
-                <video width="80%" height="80%" data-autoplay loop muted>
+                <video width="100%" height="100%" data-autoplay loop muted>
                     <source src="music/coco_trailer.mp4" type="video/mp4">
                 </video>
             </div>
             <div>
                 <video width="100%" height="100%" loop>
-                    <source src="img/main/video.mp4" type="video/mp4">
+                    <source src="music/Coco_Final_Trailer.mp4" type="video/mp4">
                 </video>
             </div>
             <div>
@@ -191,20 +194,24 @@
                     <source src="img/main/video.mp4" type="video/mp4">
                 </video>
             </div>
-        </div>
-
+        </div> -->
         <div class="video_list_wrap">
             <div class="video_list_pop">
                 <img src="img/video_list_pop.png" alt="">
             </div>
             <div class="video_player">
-                <img src="img/play_top.png" alt="play_top"><br/><br/>
-                <img src="img/num_btn.png" alt="num_btn">
-                <p>Find Your Voice</p>
+                <img src="img/play_top.png" alt="play_top">
+                <!--img src="img/num_btn.png" id="video_next" alt="num_btn">
+               <p>Find Your Voice</p--> 
+                <ul>
+<!--                     <li class="video_prv"><img src="img/num_btn.png"></li>
+                    <li class="video_num"><img src="img/num_btn.png"></li> -->
+                    <li class="video_next"><img src="img/num_btn.png"></li>
+                </ul>
                 <div class="video_player_progress">
-                    <img class="play_btn_on" src="img/play_btn.png" alt="play_btn">
-                    <div id="myProgress">
-                        <div id="myBar"></div>
+                    <img class="play_btn_on" src="img/play_btn_off.png" alt="play_btn">
+                    <div class="progressBar">
+                        <div class="timeBar"></div>
                     </div>
                 </div>
             </div>
@@ -250,12 +257,13 @@
     </div>
 
     <div class="section" id="section05">
-        <div id="main_breandbox_layer3" class="lypop main_breandbox_layer" style="display: none;">
+        <div class="bg"><img src="img/dim_music03.png" alt=""></div>
+<!--         <div id="main_breandbox_layer3" class="lypop main_breandbox_layer" style="display: none;">
             <div class="bg"></div>
             <div id="main_layer_banner3" class="wrap" data-bigwidth="" style="margin-top: -116px; margin-left: -400px;">
-                <img src="img/dim_music03.png" alt="popup_overlay" width="50%">                    
+                <img src="img/dim_music03.png" alt="popup_overlay" width="50%">
             </div>
-        </div>
+        </div> -->
         <div class="section05_title">
             <img src="img/music_title.png" alt="뮤직타이틀">
         </div>
@@ -274,9 +282,9 @@
                     <img src="img/music_04.png" alt="music_04">
                 </div>
             </div>
-        </div>
-        <div class="content_btn">
-            <img src="img/music_sliding.png" alt="">
+            <div class="content_btn">
+                <img src="img/music_sliding.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -292,29 +300,27 @@
 </ul>
 
 
-
-<div class="pop sc_02_pop">
+<div class="pop sc_02_pop" id="sc_02_pop">
     <div class="bg"></div>
     <div class="main">
-        <img src="img/main_over.png" alt="">
-
-        <div class="search"><input type="text" placeholder="검색"> <img src="img/maun_over_input.png" alt=""></div>
-    </div>
-    <div class="main_pollen">
-        <div class="pollen_01"> <img src="img/pollen_01.png" alt=""></div>
-        <div class="pollen_02"> <img src="img/pollen_02.png" alt=""></div>
-        <div class="pollen_03"> <img src="img/pollen_03.png" alt=""></div>
-        <div class="pollen_04"> <img src="img/pollen_04.png" alt=""></div>
-        <div class="pollen_05"> <img src="img/pollen_05.png" alt=""></div>
-        <div class="pollen_06"> <img src="img/pollen_06.png" alt=""></div>
-        <div class="pollen_07"> <img src="img/pollen_07.png" alt=""></div>
-        <div class="pollen_08"> <img src="img/pollen_08.png" alt=""></div>
-        <div class="pollen_09"> <img src="img/pollen_09.png" alt=""></div>
-        <div class="pollen_10"> <img src="img/pollen_10.png" alt=""></div>
-        <div class="pollen_11"> <img src="img/pollen_11.png" alt=""></div>
+        <div class="contents">
+            <div class="search"><input type="text" placeholder="검색"> <img src="" alt=""></div>
+        </div>
+        <div class="main_pollen">
+            <div class="pollen_01"> <img src="img/pollen_01.png" alt=""></div>
+            <div class="pollen_02"> <img src="img/pollen_02.png" alt=""></div>
+            <div class="pollen_03"> <img src="img/pollen_03.png" alt=""></div>
+            <div class="pollen_04"> <img src="img/pollen_04.png" alt=""></div>
+            <div class="pollen_05"> <img src="img/pollen_05.png" alt=""></div>
+            <div class="pollen_06"> <img src="img/pollen_06.png" alt=""></div>
+            <div class="pollen_07"> <img src="img/pollen_07.png" alt=""></div>
+            <div class="pollen_08"> <img src="img/pollen_08.png" alt=""></div>
+            <div class="pollen_09"> <img src="img/pollen_09.png" alt=""></div>
+            <div class="pollen_10"> <img src="img/pollen_10.png" alt=""></div>
+            <div class="pollen_11"> <img src="img/pollen_11.png" alt=""></div>
+        </div>
     </div>
 </div>
-
 
 
 <div class="pop sc_03_pop1">
@@ -402,7 +408,7 @@
             <div class="chat_title">
                 <img src="img/talk_name_03.png" alt="chat_title">
             </div>
-            
+
             <div class="chat_content">
                 <ul>
                     <li>
